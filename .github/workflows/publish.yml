@@ -3,6 +3,7 @@ name: Publish to NuGet
 on:
   release:
     types: [published]
+  workflow_dispatch:
 
 permissions:
   id-token: write
@@ -21,7 +22,7 @@ jobs:
           dotnet-version: '10.0.x'
 
       - name: Pack
-        run: dotnet pack InitialDotNetProjectSetup/InitialDotNetProjectSetup.csproj -c Release -o out
+        run: dotnet pack InitialDotNetProjectSetup.Package/InitialDotNetProjectSetup.Package.csproj -c Release -o out
 
       - name: Push to NuGet (Trusted Publishing)
         run: dotnet nuget push out/*.nupkg --api-key none --source https://api.nuget.org/v3/index.json --skip-duplicate
