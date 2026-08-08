@@ -9,8 +9,8 @@
 		<Authors>Manish Kumar</Authors>
 		<Description>Professional ASP.NET Core Web API starter template with optional Swagger support.</Description>
 		<PackageTags>dotnet-new;templates;webapi;aspnetcore</PackageTags>
-		<PackageProjectUrl>https://github.com/yourusername/init-webapi-template</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/yourusername/init-webapi-template</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/manishkumar2511/InitialDotNetProjectSetup</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/manishkumar2511/InitialDotNetProjectSetup</RepositoryUrl>
 		<IncludeContentInPack>true</IncludeContentInPack>
 		<IncludeBuildOutput>false</IncludeBuildOutput>
 		<ContentTargetFolders>content</ContentTargetFolders>
