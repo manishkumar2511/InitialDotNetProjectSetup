@@ -24,5 +24,11 @@ jobs:
       - name: Pack
         run: dotnet pack InitialDotNetProjectSetup.Package/InitialDotNetProjectSetup.Package.csproj -c Release -o out
 
+      - name: NuGet login (OIDC → temp API key)
+        uses: NuGet/login@v1
+        id: login
+        with:
+          user: yadavmanishk2511
+
       - name: Push to NuGet (Trusted Publishing)
-        run: dotnet nuget push out/*.nupkg --api-key none --source https://api.nuget.org/v3/index.json --skip-duplicate
+        run: dotnet nuget push out/*.nupkg --api-key ${{ steps.login.outputs.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
