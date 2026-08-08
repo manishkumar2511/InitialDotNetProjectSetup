@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Manish Kumar",
+  "classifications": [ "Web API", "C#", "Cloud" ],
+  "identity": "InitialDotNetProjectSetup.Identity",
+  "name": "Initial .NET Project Setup",
+  "shortName": "init-webapi",
+  "sourceName": "InitialDotNetProjectSetup",
+  "preferNameDirectory": true,
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "symbols": {
+    "IncludeSwagger": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "true",
+      "isRequired": true,
+      "description": "Include Swagger/OpenAPI documentation?"
+    },
+    "IncludeAuth": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "false",
+      "isRequired": true,
+      "description": "Include JWT Authentication boilerplate?"
+    },
+    "Framework": {
+      "type": "parameter",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "net8.0",
+          "description": "Recommended (LTS)"
+        },
+        {
+          "choice": "net10.0",
+          "description": "Latest version"
+        }
+      ],
+      "defaultValue": "net8.0",
+      "isRequired": true,
+      "description": "Target framework"
+    }
+  },
+  "postActions": [
+    {
+      "condition": "true",
+      "description": "Restore NuGet packages",
+      "manualInstructions": [
+        { "text": "Run 'dotnet restore'" }
+      ],
+      "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+      "continueOnError": true
+    }
+  ],
+  "primaryOutputs": [
+    { "path": "InitialDotNetProjectSetup.csproj" }
+  ]
+}

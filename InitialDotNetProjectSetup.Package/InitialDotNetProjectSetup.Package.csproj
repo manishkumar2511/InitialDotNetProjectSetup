@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<PackageType>Template</PackageType>
+		<PackageVersion>1.0.0</PackageVersion>
+		<PackageId>InitialDotNetProjectSetup</PackageId>
+		<Title>Initial .NET Project Setup</Title>
+		<Authors>Manish Kumar</Authors>
+		<Description>Professional ASP.NET Core Web API starter template with optional Swagger support.</Description>
+		<PackageTags>dotnet-new;templates;webapi;aspnetcore</PackageTags>
+		<PackageProjectUrl>https://github.com/yourusername/init-webapi-template</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/yourusername/init-webapi-template</RepositoryUrl>
+		<IncludeContentInPack>true</IncludeContentInPack>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+		<ContentTargetFolders>content</ContentTargetFolders>
+		<NoWarn>NU5128</NoWarn>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="..\InitialDotNetProjectSetup\**\*"
+				 Exclude="..\InitialDotNetProjectSetup\**\bin\**;..\InitialDotNetProjectSetup\**\obj\**" />
+	</ItemGroup>
+
+</Project>
