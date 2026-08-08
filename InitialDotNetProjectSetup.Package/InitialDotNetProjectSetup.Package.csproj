@@ -14,12 +14,17 @@
 		<IncludeContentInPack>true</IncludeContentInPack>
 		<IncludeBuildOutput>false</IncludeBuildOutput>
 		<ContentTargetFolders>content</ContentTargetFolders>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<NoWarn>NU5128</NoWarn>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<Content Include="..\InitialDotNetProjectSetup\**\*"
 				 Exclude="..\InitialDotNetProjectSetup\**\bin\**;..\InitialDotNetProjectSetup\**\obj\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\README.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 
 </Project>
