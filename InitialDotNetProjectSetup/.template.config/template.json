@@ -16,45 +16,10 @@
       "type": "parameter",
       "datatype": "bool",
       "defaultValue": "true",
-      "isRequired": true,
+      "isRequired": false,
       "description": "Include Swagger/OpenAPI documentation?"
-    },
-    "IncludeAuth": {
-      "type": "parameter",
-      "datatype": "bool",
-      "defaultValue": "false",
-      "isRequired": true,
-      "description": "Include JWT Authentication boilerplate?"
-    },
-    "Framework": {
-      "type": "parameter",
-      "datatype": "choice",
-      "choices": [
-        {
-          "choice": "net8.0",
-          "description": "Recommended (LTS)"
-        },
-        {
-          "choice": "net10.0",
-          "description": "Latest version"
-        }
-      ],
-      "defaultValue": "net8.0",
-      "isRequired": true,
-      "description": "Target framework"
     }
   },
-  "postActions": [
-    {
-      "condition": "true",
-      "description": "Restore NuGet packages",
-      "manualInstructions": [
-        { "text": "Run 'dotnet restore'" }
-      ],
-      "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
-      "continueOnError": true
-    }
-  ],
   "primaryOutputs": [
     { "path": "InitialDotNetProjectSetup.csproj" }
   ]
