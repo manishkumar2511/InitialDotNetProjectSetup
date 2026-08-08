@@ -7,7 +7,7 @@
 		<PackageId>InitialDotNetProjectSetup</PackageId>
 		<Title>Initial .NET Project Setup</Title>
 		<Authors>Manish Kumar</Authors>
-		<Description>A dotnet new template for quickly scaffolding ASP.NET Core Web API projects, with options to include only the features you need. After generating the project, optionally run 'dotnet new sln' followed by 'dotnet sln add *.csproj' to create a solution file (not required to build or run the project).</Description>
+		<Description>A dotnet new template for quickly scaffolding ASP.NET Core Web API projects, with options to include only the features you need. After generating the project, optionally run 'dotnet new sln' followed by 'dotnet sln add YourProjectName.csproj' to create a solution file (not required to build or run the project).</Description>
 		<PackageTags>dotnet-new;templates;webapi;aspnetcore</PackageTags>
 		<PackageProjectUrl>https://github.com/manishkumar2511/InitialDotNetProjectSetup</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/manishkumar2511/InitialDotNetProjectSetup</RepositoryUrl>
