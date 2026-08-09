@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<TargetFramework>net10.0</TargetFramework>
 		<PackageType>Template</PackageType>
-		<PackageVersion>1.0.0</PackageVersion>
+		<PackageVersion>1.0.1</PackageVersion>
 		<PackageId>DotNetCoreWebApiTemplate</PackageId>
 		<Title>DotNetCore Web API Template</Title>
 		<Authors>Manish Kumar</Authors>
