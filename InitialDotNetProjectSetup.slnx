@@ -1,4 +1,0 @@
-<Solution>
-  <Project Path="InitialDotNetProjectSetup.Package/InitialDotNetProjectSetup.Package.csproj" />
-  <Project Path="InitialDotNetProjectSetup/InitialDotNetProjectSetup.csproj" />
-</Solution>

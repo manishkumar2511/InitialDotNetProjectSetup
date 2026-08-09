@@ -4,13 +4,13 @@
 		<TargetFramework>net10.0</TargetFramework>
 		<PackageType>Template</PackageType>
 		<PackageVersion>1.0.0</PackageVersion>
-		<PackageId>InitialDotNetProjectSetup</PackageId>
-		<Title>Initial .NET Project Setup</Title>
+		<PackageId>DotNetCoreWebApiTemplate</PackageId>
+		<Title>DotNetCore Web API Template</Title>
 		<Authors>Manish Kumar</Authors>
 		<Description>A dotnet new template for quickly scaffolding ASP.NET Core Web API projects, with options to include only the features you need. After generating the project, optionally run 'dotnet new sln' followed by 'dotnet sln add YourProjectName.csproj' to create a solution file (not required to build or run the project).</Description>
 		<PackageTags>dotnet-new;templates;webapi;aspnetcore</PackageTags>
-		<PackageProjectUrl>https://github.com/manishkumar2511/InitialDotNetProjectSetup</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/manishkumar2511/InitialDotNetProjectSetup</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/manishkumar2511/DotNetCoreWebApiTemplate</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/manishkumar2511/DotNetCoreWebApiTemplate</RepositoryUrl>
 		<IncludeContentInPack>true</IncludeContentInPack>
 		<IncludeBuildOutput>false</IncludeBuildOutput>
 		<ContentTargetFolders>content</ContentTargetFolders>
@@ -19,8 +19,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Content Include="..\InitialDotNetProjectSetup\**\*"
-				 Exclude="..\InitialDotNetProjectSetup\**\bin\**;..\InitialDotNetProjectSetup\**\obj\**" />
+		<Content Include="..\DotNetCoreWebApiTemplate\**\*"
+				 Exclude="..\DotNetCoreWebApiTemplate\**\bin\**;..\DotNetCoreWebApiTemplate\**\obj\**" />
 	</ItemGroup>
 
 	<ItemGroup>

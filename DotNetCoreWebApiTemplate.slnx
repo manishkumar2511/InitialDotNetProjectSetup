@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="DotNetCoreWebApiTemplate.Package/DotNetCoreWebApiTemplate.Package.csproj" />
+  <Project Path="DotNetCoreWebApiTemplate/DotNetCoreWebApiTemplate.csproj" />
+</Solution>

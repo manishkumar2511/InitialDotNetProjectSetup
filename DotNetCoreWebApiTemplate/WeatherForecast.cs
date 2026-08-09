@@ -1,4 +1,4 @@
-namespace InitialDotNetProjectSetup
+namespace DotNetCoreWebApiTemplate
 {
     public class WeatherForecast
     {
