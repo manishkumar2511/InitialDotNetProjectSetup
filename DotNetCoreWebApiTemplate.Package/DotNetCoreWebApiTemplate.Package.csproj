@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<TargetFramework>net10.0</TargetFramework>
 		<PackageType>Template</PackageType>
-		<PackageVersion>1.0.1</PackageVersion>
+		<PackageVersion>1.0.2</PackageVersion>
 		<PackageId>DotNetCoreWebApiTemplate</PackageId>
 		<Title>DotNetCore Web API Template</Title>
 		<Authors>Manish Kumar</Authors>
@@ -20,7 +20,10 @@
 
 	<ItemGroup>
 		<Content Include="..\DotNetCoreWebApiTemplate\**\*"
-				 Exclude="..\DotNetCoreWebApiTemplate\**\bin\**;..\DotNetCoreWebApiTemplate\**\obj\**" />
+				 Exclude="..\DotNetCoreWebApiTemplate\**\bin\**;..\DotNetCoreWebApiTemplate\**\obj\**">
+			<Pack>true</Pack>
+			<PackagePath>content\%(RecursiveDir)%(Filename)%(Extension)</PackagePath>
+		</Content>
 	</ItemGroup>
 
 	<ItemGroup>
